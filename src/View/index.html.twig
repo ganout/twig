@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <ul style="display: flex; justify-content: space-around; width: 100%; flex-wrap: wrap">
+        {% for product in products %}
+            <li style="list-style-type: none; min-width: 30%">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">{{ product }}</p>
+                    </div>
+                </div>
+            </li>
+        {% endfor%}
+    </ul>
+{% endblock %}
